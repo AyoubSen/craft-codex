@@ -80,7 +80,7 @@ export default function ModDetail({ id }) {
             <div className="panel box" style={{ marginBottom: 16 }}>
               <h3>Required by {mod.requiredBy.length} mod{mod.requiredBy.length > 1 ? 's' : ''}</h3>
               <p className="muted" style={{ marginTop: 0, fontSize: 13.5 }}>
-                Removing this jar breaks all of them.
+                Removing this mod breaks all of them.
               </p>
               <div className="pill-list">
                 {mod.requiredBy.map((r) => (
@@ -108,7 +108,7 @@ export default function ModDetail({ id }) {
             <dt>Author</dt><dd>{mod.authors || '—'}</dd>
             <dt>Source</dt><dd>{SOURCE_LABEL[mod.source]}</dd>
             <dt>Licence</dt><dd>{mod.license || '—'}</dd>
-            <dt>Jar</dt><dd className="mono" style={{ wordBreak: 'break-all' }}>{mod.file}</dd>
+            <dt>File</dt><dd className="mono" style={{ wordBreak: 'break-all' }}>{mod.file}</dd>
             {mod.url && (
               <>
                 <dt>Link</dt>

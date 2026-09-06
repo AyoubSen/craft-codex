@@ -55,7 +55,7 @@ export default function Home() {
       <h2>What we added on top</h2>
       <p className="lede" style={{ marginTop: -8 }}>
         Stock Craftoria has no Aether, no Undergarden, no space, and no bees worth farming.
-        These {added.length} jars are ours — everything else on this site is the pack as shipped.
+        These {added.length} mods are ours — everything else on this site is the pack as shipped.
       </p>
       <div className="grid">
         {added.map((m) => <ModCard key={m.modId} mod={m} categories={categories} />)}

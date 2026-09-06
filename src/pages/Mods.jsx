@@ -40,9 +40,8 @@ export default function Mods({ query }) {
     <div className="page">
       <h1>All mods</h1>
       <p className="lede">
-        {stats.total} jars read straight out of the <code>{pack.instance}</code> instance —
-        {' '}{stats.pack} from {pack.name} {pack.version} and {stats.added} we added ourselves.
-        Click any mod for its description, dependencies and linked guides.
+        Every mod in the pack — {stats.pack} from {pack.name} {pack.version} and {stats.added} we
+        added ourselves. Click any mod for its description, what it needs, and linked guides.
       </p>
 
       <div className="controls">

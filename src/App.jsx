@@ -103,7 +103,7 @@ export default function App() {
         <div className="page" style={{ paddingTop: 0, paddingBottom: 40 }}>
           <div className="footer">
             Generated from the <code>{data.pack.instance}</code> instance on {data.stats.generatedAt} ·{' '}
-            {data.pack.name} {data.pack.version} + {data.stats.added} of our own jars ·{' '}
+            {data.pack.name} {data.pack.version} + {data.stats.added} mods of our own ·{' '}
             re-run <code>npm run sync</code> after changing the pack.
           </div>
         </div>

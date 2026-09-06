@@ -68,8 +68,8 @@ export const guides = [
   {
     id: 'our-additions',
     title: 'What we added on top of Craftoria',
-    subtitle: 'Thirteen jars, why each one is there, and what it changes.',
-    mods: ['aether', 'deep_aether', 'aether_villages', 'undergarden', 'mowziesmobs', 'ad_astra', 'ad_astra_giselle_addon', 'productivebees', 'computercraft', 'antiquetradingship'],
+    subtitle: 'The fourteen mods we added, why each one is there, and what it changes.',
+    mods: ['aether', 'deep_aether', 'aether_villages', 'undergarden', 'mowziesmobs', 'ad_astra', 'ad_astra_giselle_addon', 'productivebees', 'computercraft', 'antiquetradingship', 'xaeroheadtracker'],
     tags: ['start here'],
     level: 'Beginner',
     sections: [
@@ -86,9 +86,10 @@ export const guides = [
         ['**CC: Tweaked**', 'Lua computers and turtles. Craftoria already ships Advanced Peripherals, which is a CC addon — it was strange for the base mod to be missing.'],
         ['**Antique Trading Ship**', 'A small structure with a merchant. Cheap flavour.'],
         ['**EMI QoL Tweaks**', 'Minor recipe-screen polish.'],
+        ['**Xaero Head Tracker**', 'Shows each player’s head on the minimap and world map instead of an anonymous arrow, so you can tell who is who at a glance.'],
         ['**oωo Lib, Common Storage Lib**', 'Not content — required dependencies of Ad Astra.'],
       ]},
-      { type: 'warn', heading: 'Everyone needs all thirteen', body: 'These are not optional client mods. A player missing Ad Astra or the Aether cannot join. See the Install page for the exact file list.' },
+      { type: 'warn', heading: 'Everyone needs all fourteen', body: 'These are not optional client mods. A player missing Ad Astra or the Aether cannot join. See the Install page for the full list.' },
       { type: 'tip', heading: 'They are not in the quest book', body: 'The FTB Quests chapters only cover stock Craftoria. Nothing we added has quests — you find it by going there. That is fine; the Aether and the Undergarden have their own in-game progression.' },
     ],
   },
