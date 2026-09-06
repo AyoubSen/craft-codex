@@ -10706,6 +10706,26 @@
     "dependencies": []
   },
   {
+    "file": "XaeroHeadTracker-1.0.0-neoforge-1.21.1.jar",
+    "mtime": "2026-09-06T12:50:17.254Z",
+    "modId": "xaeroheadtracker",
+    "name": "Xaero Head Tracker",
+    "version": "1.0.0",
+    "authors": null,
+    "description": "Suivi des têtes de joueurs sur la carte Xaero.",
+    "url": null,
+    "logoFile": null,
+    "license": "MIT",
+    "extraModIds": [],
+    "dependencies": [
+      {
+        "modId": "xaeroworldmap",
+        "mandatory": false,
+        "side": "CLIENT"
+      }
+    ]
+  },
+  {
     "file": "xaerominimap-neoforge-1.21.1-26.4.2.jar",
     "mtime": "2026-09-04T20:12:18.893Z",
     "modId": "xaerominimap",

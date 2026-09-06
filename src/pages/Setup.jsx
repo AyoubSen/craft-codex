@@ -36,14 +36,14 @@ export default function Setup() {
       <h1>Install</h1>
       <p className="lede">
         You install <b>{pack.name} {pack.version}</b> from CurseForge like any normal modpack, then
-        drop {stats.added} extra jars into <code>mods</code>. That’s the whole setup — there is no
-        custom launcher, no separate download, and nothing to remove from the pack.
+        then add our {stats.added} extra mods to it. That’s the whole setup — there is no custom
+        launcher, no separate download, and nothing to remove from the pack.
       </p>
 
       <div className="callout">
         <b>⚠ Everyone must be on the exact same list</b>
-        Same pack version <em>and</em> the same {stats.added} extra jars, same versions. One person
-        missing Ad Astra is a failed handshake and a “missing mods” kick at join.
+        Same pack version <em>and</em> the same {stats.added} extra mods, same versions. One person
+        missing Ad Astra gets kicked with “missing mods” the moment they try to join.
       </div>
 
       <h2>1 · Get Craftoria {pack.version}</h2>
@@ -62,27 +62,22 @@ export default function Setup() {
         <li>Launch it once to the main menu before adding anything, so the pack generates its configs.</li>
       </ol>
 
-      <h2>2 · Add our {stats.added} jars</h2>
+      <h2>2 · Add our {stats.added} mods</h2>
       <ol className="guide-body">
         <li>Close the game. Right-click the instance → <b>Folder</b> → open <code>minecraft/mods</code>.</li>
-        <li>Copy in the {stats.added} jars listed below. Don’t rename them; the version in the file name is the version we’re all on.</li>
+        <li>Copy in the {stats.added} mods listed below — one file each, exactly the versions we share. Don’t rename the files.</li>
         <li>Launch. First start after adding mods is slow — a few minutes is normal, it’s rebuilding the recipe and registry caches.</li>
         <li>Check the mod count in the title screen’s Mods list reads <b>{stats.total}</b>.</li>
       </ol>
 
       <p className="muted">
-        Three of those are dependencies, not content: <code>owo-lib</code> and{' '}
-        <code>common-storage-lib</code> are required by Ad Astra, and Ad Astra’s Giselle addon is
-        what makes Mekanism and Modern Industrialization work off-world.
+        Three of those add nothing on their own — <b>oωo</b> and <b>Common Storage Lib</b> are
+        required by Ad Astra, and <b>Ad Astra: Giselle Addon</b> is what makes Mekanism and Modern
+        Industrialization work off-world. Copy them anyway.
       </p>
 
       <div className="split-cols">
-        <CopyList
-          tone="added"
-          title="Our extra jars"
-          note="Drop these into minecraft/mods on top of a clean Craftoria install."
-          files={addedFiles}
-        />
+        <AddedList />
       </div>
 
       <h2>3 · Settings worth changing straight away</h2>
@@ -100,10 +95,10 @@ export default function Setup() {
       <table className="data">
         <thead><tr><th>Symptom</th><th>Usual cause</th></tr></thead>
         <tbody>
-          <tr><td>Kicked at join: “missing mods”</td><td>You’re missing one of our {stats.added} jars, or you’re on a different Craftoria version.</td></tr>
-          <tr><td>Crash on startup mentioning <code>owo</code> or <code>ad_astra</code></td><td>You copied Ad Astra without its two dependency jars.</td></tr>
-          <tr><td>Crash on world load</td><td>A worldgen mod was added or removed after the world existed. Check <code>logs/latest.log</code> and put the jar back.</td></tr>
-          <tr><td>“Registry remapping failed” / missing items</td><td>Same cause — restore the jar, or accept the item loss and let it remap.</td></tr>
+          <tr><td>Kicked at join: “missing mods”</td><td>You’re missing one of our {stats.added} mods, or you’re on a different Craftoria version.</td></tr>
+          <tr><td>Crash on startup mentioning <code>owo</code> or <code>ad_astra</code></td><td>You copied Ad Astra without <b>oωo</b> and <b>Common Storage Lib</b>.</td></tr>
+          <tr><td>Crash on world load</td><td>A worldgen mod was added or removed after the world existed. Check <code>logs/latest.log</code> and put the mod back.</td></tr>
+          <tr><td>“Registry remapping failed” / missing items</td><td>Same cause — put the mod back, or accept the item loss and let it remap.</td></tr>
           <tr><td>Stutter every few seconds</td><td>GC. Lower the RAM allocation, then simulation distance. See the <a className="link" href={href('guides/performance')}>performance guide</a>.</td></tr>
           <tr><td>Very long first launch</td><td>Normal. {stats.total} mods, plus shader compilation. It’s only slow once.</td></tr>
           <tr><td>Missing textures / invisible blocks</td><td>Shader pack mismatch. Disable shaders in Iris, relaunch, re-enable.</td></tr>

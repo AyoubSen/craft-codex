@@ -46,6 +46,7 @@ export const ADDED_JARS = {
   'emi-qol-tweaks-neoforge-1.2': 'Tiny EMI tweaks — nicer recipe-screen behaviour.',
   'common-storage-lib-neoforge-1.21.1-0.0.10': 'Dependency of Ad Astra.',
   'owo-lib-neoforge-0.12.15.5-beta.1+1.21': 'Dependency of Ad Astra.',
+  'XaeroHeadTracker-1.0.0-neoforge-1.21.1': "Puts everyone's player heads on the Xaero minimap and world map instead of plain arrows.",
 };
 
 /* ── Explicit modId → category ─────────────────────────────────────────── */
@@ -185,7 +186,7 @@ export const CATEGORY_OF = {
   emi_letsdo_compat: 'client', emiaddon: 'client', emiffect: 'client', emi_enchanting: 'client',
   toomanyrecipeviewers: 'client', jade: 'client', jadeaddons: 'client',
   mekagenjei: 'client', mekajadeupgrade: 'client', jei_mekanism_multiblocks: 'client',
-  xaerominimap: 'client', xaeroworldmap: 'client', iris: 'client', iris_shader_folder: 'client',
+  xaerominimap: 'client', xaeroworldmap: 'client', xaeroheadtracker: 'client', iris: 'client', iris_shader_folder: 'client',
   euphoria_patcher: 'client', lambdynlights: 'client', lighty: 'client',
   entity_model_features: 'client', entity_texture_features: 'client', fusion: 'client',
   ctm: 'client', darkmodeeverywhere: 'client', enhancedcelestials2shaders: 'client',

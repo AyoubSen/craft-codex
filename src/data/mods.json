@@ -10,8 +10,8 @@
     "instance": "clean Craftoria"
   },
   "stats": {
-    "total": 533,
-    "added": 13,
+    "total": 534,
+    "added": 14,
     "pack": 520,
     "libraries": 70,
     "byCategory": {
@@ -24,7 +24,7 @@
       "storage": 13,
       "building": 42,
       "utility": 47,
-      "client": 89,
+      "client": 90,
       "performance": 27,
       "library": 70
     },
@@ -13806,6 +13806,33 @@
       "source": "pack",
       "addedNote": null,
       "logo": "logos/wits.webp",
+      "highlight": false,
+      "requiredBy": []
+    },
+    {
+      "file": "XaeroHeadTracker-1.0.0-neoforge-1.21.1.jar",
+      "mtime": "2026-09-06T12:50:17.254Z",
+      "modId": "xaeroheadtracker",
+      "name": "Xaero Head Tracker",
+      "version": "1.0.0",
+      "authors": null,
+      "description": "Suivi des têtes de joueurs sur la carte Xaero.",
+      "url": null,
+      "logoFile": null,
+      "license": "MIT",
+      "extraModIds": [],
+      "dependencies": [
+        {
+          "modId": "xaeroworldmap",
+          "mandatory": false,
+          "side": "CLIENT",
+          "name": "Xaero's World Map"
+        }
+      ],
+      "category": "client",
+      "source": "added",
+      "addedNote": "Puts everyone's player heads on the Xaero minimap and world map instead of plain arrows.",
+      "logo": "logos/xaeroheadtracker.webp",
       "highlight": false,
       "requiredBy": []
     },
